@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-notifications" id="topNotifications">
+        <!-- Notifications will be added dynamically -->
+    </div>
+
+    <div class="header">
+        <h1>Banking Dashboard</h1>
+        <div class="header-right">
+            <span class="welcome-text">Hello, <span id="username"></span></span>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+                <span>Theme</span>
+            </button>
+            <button class="logout-btn" onclick="logout()">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container" id="dashboard-container">
+        <!-- Content will be loaded dynamically -->
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="disclaimer">
+                This is a sample banking dashboard. Data is fictitious and for demonstration purposes only.
+            </p>
+        </div>
+    </footer>
+
+    <script src="theme.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
