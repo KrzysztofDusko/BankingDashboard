@@ -156,13 +156,25 @@ body {
     z-index: 100;
 }
 .top-notification {
-    background: white;
+    background: var(--surface-color);
     padding: 12px 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     display: flex;
     gap: 12px;
     animation: slideIn 0.3s ease, fadeOut 0.3s ease 4.7s forwards;
+    border: 1px solid var(--border-color);
+}
+.top-notification i {
+    color: var(--primary);
+}
+.top-notification-title {
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.top-notification-message {
+    color: var(--text-secondary);
 }
 .notification-item, .transaction-item {
     padding: 15px;
@@ -489,5 +501,14 @@ body {
 
 [data-theme="dark"] .modal-content {
     background: var(--surface-color);
+    border-color: var(--border-color);
+}
+
+/* Dark theme specific overrides */
+[data-theme="dark"] .top-notification {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+[data-theme="dark"] .notification-item {
     border-color: var(--border-color);
 }
