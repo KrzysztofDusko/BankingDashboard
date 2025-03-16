@@ -6,12 +6,6 @@ This project contains a banking dashboard interface with dynamic content loading
 
 This entire project was generated using Claude 3.5 Sonnet, an advanced AI language model developed by Anthropic.
 
-## Project Structure
-
-- `index.html` - Main dashboard interface
-- `styles.css` - Dashboard styling
-- `dashboard.js` - Dashboard functionality
-
 ## Python Configuration
 
 ### Requirements
@@ -19,26 +13,15 @@ This entire project was generated using Claude 3.5 Sonnet, an advanced AI langua
 - pip package manager
 
 ### Setup
-1. Create a virtual environment:
+- run 
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+python -m pip install src/backend/requiments.txt
 ```
 
-2. Install required packages:
-```bash
-pip install -r requirements.txt
-```
-
-### Running Python Scripts
-Execute the main script from the project root:
-```bash
-python src/main.py
-```
-
+### Running Backend
 Run the backend server with:
 ```bash
-uvicorn backend:app --reload
+uvicorn src.backend.backend:app --reload
 ```
 
 ## Frontend Development
